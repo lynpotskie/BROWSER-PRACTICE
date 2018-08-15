@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Texts</title>
+  <script>
+      window.onload= function(){
+        const paragraph = document.querySelector('p');
+
+console.log(paragraph.innerHTML); // This is just a paragraph text
+
+paragraph.innerHTML = '<li>Item 1</li><li>Item 2</li><li>Item 3</li><li>Item 4</li><li>Item 5</li>';
+
+console.log(paragraph.innerHTML);
+      }
+  </script>
+</head>
+<body>
+  <h1>Main Title</h1>
+  <p>This is a paragraph</p>
+  <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li> 
+  </ul>
+</body>
+</html>

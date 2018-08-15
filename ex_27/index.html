@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> even and odd color</title>
+  <script>
+  window.onload =function(){
+    for (var counter = 0; counter <= 100; counter++) {
+
+var odd = false;
+for (var i = 2; i <= counter; i++) {
+    if (counter%i===0 && i!==counter) {
+        even = true;
+    }
+}
+if (odd === false) {
+            console.log(counter);
+}
+let ulElement = document.querySelector('ul');
+let liElement = document.querySelector('li');
+
+if (counter % 2 == 0){
+    liElement.style.color = 'red';
+    } else {
+      liElement.style.color = 'blue';
+    }
+ul.appendChild(li);
+liElement.appendChild(ul);
+    }
+  
+  
+  }
+  </script>
+</head>
+  <body>
+<ul>
+    <li>1</li>
+    <li>15</li>
+    <li>40</li>
+    <li>55</li>
+    <li>75</li>
+    <li>100</li>
+</ul>
+
+
+
+
+  </body>
+</html>
